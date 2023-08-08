@@ -37,6 +37,11 @@ li {
     background-color: rgb(255, 197, 104);
 }
 
+label {
+    font-family: gotham_m;
+    font-size: 18px;
+}
+
 .selected:hover {
     background-color: darkorange;
 }
@@ -157,6 +162,7 @@ table, th, td {
     flex-direction: column;
     min-width: 0;
     flex-basis: 50%;
+    text-align: center;
     border-style: solid;
     border-top: 0;
     border-left: 0;

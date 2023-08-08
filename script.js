@@ -386,10 +386,24 @@ function formatNavBar(key) {
 
 };
 
+function getProgramSpeed() {
+    
+    if (document.getElementById("slow_speed").checked) {
+        return 500;
+    } else if (document.getElementById("medium_speed").checked) {
+        return 50;
+    } else {
+        return 1;
+    }
+}
+
 function runActiveProgram() {
+
+    // Get speed
+    speed = getProgramSpeed();
     
     if (current_interp != null) {
-        currentInterval = setInterval(programHelper, 1);
+        currentInterval = setInterval(programHelper, speed);
         running = true;
     };
 };
