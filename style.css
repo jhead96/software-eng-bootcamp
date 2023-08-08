@@ -1,0 +1,189 @@
+@font-face {
+    font-family: gotham_m;
+    src: url("resources/GothamMedium.ttf");
+}
+
+
+:root {
+    --maxWidth: 1600px;
+    --gap: 3rem;
+    --backColour: #ffc568; 
+}
+
+
+body {
+    background-color: #202022;
+}
+
+
+p {
+    font-size: 20px;
+}
+
+
+h1, h2, h3, p {
+    font-family: gotham_m;
+}
+
+
+li {
+    flex-basis: 33%;
+    font-family: gotham_m;
+    font-size: 20px;
+    border: solid;
+    border-color: black;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: rgb(255, 197, 104);
+}
+
+.selected:hover {
+    background-color: darkorange;
+}
+
+table, th, td {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-collapse: collapse;
+}
+
+
+.buffer_element {
+    flex-basis: 0.5%;
+    border: 0;
+    background-color: black;
+}
+
+
+.centre_text {
+    text-align: center;
+}
+
+#stackText, #outputText {
+    word-break: break-all;
+    text-align: center;
+}
+
+
+.main_content {
+    margin: auto;
+    max-width: var(--maxWidth);
+    padding: 0 var(--gap);
+    background-color: #202022;
+
+}
+
+
+.top_box {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px 10px 0px 0px;  
+}
+
+
+.program_box {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--backColour);
+    border-style: solid;
+    border-bottom: 0;
+}
+
+
+.bottom_box {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.select_program_box {
+    flex-basis: 50%;
+    text-align: center;
+    border: solid;
+    border-top: 0;
+    background-color: var(--backColour);
+    margin:0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.program_nav_bar {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.desc_str {
+    background-color:  darkorange;
+}
+
+.selected_item {
+    background-color: darkorange;
+    border-bottom: 0;
+}
+
+
+.more_info_box {
+    flex-basis: 50%;
+    text-align: center;
+    background-color: lightblue;
+    
+}
+
+
+.main_body {
+    padding: 4%;
+    background-color: lightblue;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    border-radius: 10px 10px 10px 10px;
+}
+
+
+.defaultCell {
+    font-family: "Lucida Console", monospace;
+}
+
+.defaultCell:hover {
+    background-color:lightblue;
+}
+
+
+
+.internal_display{
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    flex-basis: 50%;
+    border-style: solid;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+.speed_selector {
+    display: flex;
+    flex-direction: row;
+}
+
+.program_display{
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    flex-basis: 50%;
+    padding-bottom: 1%;
+    
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Befunge-93</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" async defer></script>
+    </head>
+
+    <body>
+        <div class="main_content">
+
+            <main class="main_body">
+                <header class="top_box">
+                    <div>
+                        <h1>Befunge-93 Interpreter & Visualiser</h1>
+                    </div>
+                    <div>
+                        <p>Jake Head</p>
+                    </div>
+                    <div>
+                        <p>
+                            Befunge-93 is an esoteric programming language created by Chris Presser in 1993.
+                            Its most notable feature is the 2D program counter.
+                            Unlike tradition programming languages, the program counter is free to move in the cardinals directions on a 2D grid.
+                            Programs are written in an 80 x 25 grid and are terminated when an @ character is reached.
+                            If the program counter reaches the end of the grid, it will wrap around.
+                            It uses a stack (LIFO) for manipulation of data throughout the execution of the program.
+                            Turing-complete extensions such as <a href="https://esolangs.org/wiki/Funge-98">Funge-98</a> have been subsequently released. 
+                        </p>
+                        <p>
+                            This website implements a Befunge-93 interpreter in JavaScript using a 15x50 grid.
+                            It displays the movement of the program counter throughout the grid during execution and the state of the stack and output.
+                            It was inspired by a kata from <a href="https://www.codewars.com/kata/526c7b931666d07889000a3c/train/python/64b5a67b27f2c9166997f56e">Codewars</a> and was developed for a software bootcamp.  
+                            
+                        </p>
+                    </div>
+                </header>
+
+                <div class="program_box">
+
+                    
+                    <div class = "program_display" style="overflow: auto;">
+                        <h2 class="centre_text">Program</h2>
+                        <table id="programTable">
+                        </table>
+                    </div>
+
+                    <div class="internal_display">
+                        <div class="stack_output">
+                                <h2 class="centre_text">Stack</h2>
+                                <p id="stackText">EMPTY</p>
+                        </div>   
+                        <div class="str_output">
+                                <h2 class="centre_text">Output</h2>
+                                <p id="outputText">EMPTY</p>
+                        </div>
+                        <div style="text-align: center;">
+                            <button id="startBtn">Start</button>
+                            <button id="stopBtn">Stop</button>
+                        </div>
+
+                    </div>
+                    
+                </div>
+
+
+                <div class="bottom_box">
+                    
+                    <div class="select_program_box">
+                        
+                        <div>
+                             <h2>Select program</h2>
+                        </div>
+                       
+                        <div>
+
+                            <ul class="program_nav_bar">
+                                <li id="HWBtn" class="selected" style="border-left: 0;">Hello world!</li>
+                                <li class="buffer_element"></li>
+                                <li id="FBtn" class="selected">8!</li>
+                                <li class="buffer_element"></li>
+                                <li id="QBtn" class="selected" style="border-right: 0;">Quine</li>
+                            </ul>
+
+                        </div>
+        
+                        <div class="desc_str">
+                            <p id="programDescStr">--</p>
+                        </div>
+                    </div> 
+                    
+                    <div class="more_info_box">
+                        <h2>More Info</h2>
+                        <p><a href="http://www.nsl.com/papers/befunge93/befunge93.htm">Befunge-93 specification</a></p>
+                        <p><a href="https://en.wikipedia.org/wiki/Befunge">Wikipedia</a></p>     
+                    </div>
+
+                </div>
+
+            </main>
+
+
+        
+        
+        </div>
+    </body>
+</html>
