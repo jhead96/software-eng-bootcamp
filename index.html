@@ -18,6 +18,7 @@
         <div class="main_content">
 
             <main class="main_body">
+
                 <header class="top_box">
                     <div>
                         <h1>Befunge-93 Interpreter & Visualiser</h1>
@@ -44,6 +45,29 @@
                     </div>
                 </header>
 
+                <div class="select_program_box">
+                        
+                    <div>
+                         <h2>Select program</h2>
+                    </div>
+                   
+                    <div>
+
+                        <ul class="program_nav_bar">
+                            <li id="HWBtn" class="selected" style="border-left: 0;">Hello world!</li>
+                            <li class="buffer_element"></li>
+                            <li id="FBtn" class="selected">8!</li>
+                            <li class="buffer_element"></li>
+                            <li id="QBtn" class="selected" style="border-right: 0;">Quine</li>
+                        </ul>
+
+                    </div>
+    
+                    <div class="desc_str">
+                        <p id="programDescStr">--</p>
+                    </div>
+                </div>
+
                 <div class="program_box">
 
                     
@@ -54,71 +78,52 @@
                     </div>
 
                     <div class="internal_display">
-                        <div class="stack_output">
+                        <div class="text_output">
                                 <h2 class="centre_text">Stack</h2>
                                 <p id="stackText">EMPTY</p>
                         </div>   
-                        <div class="str_output">
+                        
+                        <div class="text_output">
                                 <h2 class="centre_text">Output</h2>
                                 <p id="outputText">EMPTY</p>
                         </div>
 
+                    </div>
 
-                        <div>
-                            <h3>Speed</h3>
+                    <div class="bottom_row">
+
+                        <div class="speed_display">
+                            <div>
+                                <h3>Speed</h3>
+                            </div>
+
+                            <div>
+                                <input type="radio" id="slow_speed" name="speed_select">
+                                <label for="slow_speed">Slow</label>
+                                <input type="radio" id="medium_speed" name="speed_select">
+                                <label for="medium_speed">Medium</label>
+                                <input type="radio" id="fast_speed" name="speed_select">
+                                <label for="fast_speed">Fast</label>
+                            </div>
                         </div>
 
-                        <div>
-                            <input type="radio" id="slow_speed" name="speed_select">
-                            <label for="slow_speed">Slow</label>
-                            <input type="radio" id="medium_speed" name="speed_select">
-                            <label for="medium_speed">Medium</label>
-                            <input type="radio" id="fast_speed" name="speed_select">
-                            <label for="fast_speed">Fast</label>
-                        </div>
 
-                        <div style="padding-top: 2%;">
-                            <button id="startBtn">Start</button>
-                            <button id="stopBtn">Stop</button>
+                        <div class="button_box">
+                            <button class = "button" id="startBtn">START</button>
+                            <button class = "button" id="stopBtn">STOP</button>
+                            <button class = "button" id="resetBtn">RESET</button>
                         </div>
 
                     </div>
-                    
+  
                 </div>
 
-
-                <div class="bottom_box">
-                    
-                    <div class="select_program_box">
-                        
-                        <div>
-                             <h2>Select program</h2>
-                        </div>
-                       
-                        <div>
-
-                            <ul class="program_nav_bar">
-                                <li id="HWBtn" class="selected" style="border-left: 0;">Hello world!</li>
-                                <li class="buffer_element"></li>
-                                <li id="FBtn" class="selected">8!</li>
-                                <li class="buffer_element"></li>
-                                <li id="QBtn" class="selected" style="border-right: 0;">Quine</li>
-                            </ul>
-
-                        </div>
-        
-                        <div class="desc_str">
-                            <p id="programDescStr">--</p>
-                        </div>
-                    </div> 
-                    
-                    <div class="more_info_box">
-                        <h2>More Info</h2>
-                        <p><a href="http://www.nsl.com/papers/befunge93/befunge93.htm">Befunge-93 specification</a></p>
-                        <p><a href="https://en.wikipedia.org/wiki/Befunge">Wikipedia</a></p>     
-                    </div>
-
+                <div class="more_info_box">
+                    <h2>More Info</h2>
+                    <p><a href="http://www.nsl.com/papers/befunge93/befunge93.htm">Befunge-93 specification</a></p>
+                    <p><a href="https://en.wikipedia.org/wiki/Befunge">Wikipedia</a></p>     
                 </div>
+
 
             </main>
 

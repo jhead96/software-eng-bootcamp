@@ -35,6 +35,7 @@ li {
     padding-top: 1%;
     padding-bottom: 1%;
     background-color: rgb(255, 197, 104);
+    transition-duration: 0.2s;
 }
 
 label {
@@ -49,6 +50,8 @@ label {
 table, th, td {
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-collapse: collapse;
+    text-align: center;
+    transition-duration: 0.1s;
 }
 
 
@@ -63,7 +66,9 @@ table, th, td {
     text-align: center;
 }
 
-#stackText, #outputText {
+
+.text_output {
+    flex-basis: 50%;
     word-break: break-all;
     text-align: center;
 }
@@ -74,7 +79,6 @@ table, th, td {
     max-width: var(--maxWidth);
     padding: 0 var(--gap);
     background-color: #202022;
-
 }
 
 
@@ -86,25 +90,17 @@ table, th, td {
 
 
 .program_box {
-    display: flex;
-    flex-direction: row;
     background-color: var(--backColour);
     border-style: solid;
-    border-bottom: 0;
 }
 
-
-.bottom_box {
-    display: flex;
-    flex-direction: row;
-}
 
 
 .select_program_box {
     flex-basis: 50%;
     text-align: center;
     border: solid;
-    border-top: 0;
+    border-bottom: 0;
     background-color: var(--backColour);
     margin:0;
     display: flex;
@@ -118,6 +114,7 @@ table, th, td {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    transition-duration: 0.2s;
 }
 
 .desc_str {
@@ -139,11 +136,15 @@ table, th, td {
 
 
 .main_body {
+
+    display: flex;
+    flex-direction: column;
     padding: 4%;
     background-color: lightblue;
     margin-top: 4%;
     margin-bottom: 4%;
     border-radius: 10px 10px 10px 10px;
+
 }
 
 
@@ -159,20 +160,70 @@ table, th, td {
 
 .internal_display{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     min-width: 0;
     flex-basis: 50%;
     text-align: center;
-    border-style: solid;
-    border-top: 0;
-    border-left: 0;
+    border-top: solid;
+
+}
+
+.speed_display {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex-basis: 50%;
+    border-top: solid;
+}
+
+.button_box {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 50%;
+}
+
+.button {
+    flex-basis: 50%;
+    font-family: gotham_m, sans-serif;
+    font-size: 30px;
+    background-color: var(--backColour);
+    border-bottom: 0;
+    border-top: solid;
+    transition-duration: 0.2s;
+}
+
+#startBtn {
+    border-left: solid;
     border-right: 0;
+}
+
+#stopBtn {
+    border-left: solid;
+    border-right: 0;
+}
+
+#resetBtn {
+    border-right: 0;
+    border-left: solid;
+}
+
+.button:hover {
+    background: darkorange;
+}
+
+
+.bottom_row {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 50%;
 }
 
 .speed_selector {
     display: flex;
     flex-direction: row;
 }
+
+
 
 .program_display{
     display: flex;
