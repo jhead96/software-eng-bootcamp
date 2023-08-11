@@ -22,13 +22,13 @@ p {
 
 
 h1, h2, h3, p {
-    font-family: gotham_m, sans-serif;
+    font-family: sans-serif;
 }
 
 
 li {
     flex-basis: 33%;
-    font-family: gotham_m, sans-serif;
+    font-family: sans-serif;
     font-size: 20px;
     border: solid;
     border-color: black;
@@ -39,7 +39,7 @@ li {
 }
 
 label {
-    font-family: gotham_m, sans-serif;
+    font-family: sans-serif;
     font-size: 18px;
 }
 
@@ -184,7 +184,7 @@ table, th, td {
 
 .button {
     flex-basis: 50%;
-    font-family: gotham_m, sans-serif;
+    font-family: sans-serif;
     font-size: 30px;
     background-color: var(--backColour);
     border-bottom: 0;
